@@ -28,6 +28,7 @@ namespace WEB.Controllers
     public class AccountController : Controller
     {
         //test done
+        int a = 0;//for testing 
         StringBuilder str = new StringBuilder();
         List<MenuMaster> menulist;
         #region Login
