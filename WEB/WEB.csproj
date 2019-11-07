@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28BF2768-C915-4A8A-9B52-EC740F550FE2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WEB</RootNamespace>
+    <AssemblyName>WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetOpenAuth.AspNet">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.7.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.7.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Microsoft.Practices.EnterpriseLibrary.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Navitaire.NPS.HTTPCompresssionServices">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Navitaire.NPS.HTTPCompresssionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AllDLLs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.30506\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="XDFBAL">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\XDFBAL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\CustomAuthorize.cs" />
+    <Compile Include="AppCode\HtmlHelpers.cs" />
+    <Compile Include="AppCode\PageActionFilter.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\FeeController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\CompressContentAttribute.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Filters\JsonFactoryCustom.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ASP.html" />
+    <Content Include="Content\AutoCompleteCSS\chosen-sprite%402x.png" />
+    <Content Include="Content\AutoCompleteCSS\chosen-sprite.png" />
+    <Content Include="Content\AutoCompleteCSS\chosen.css" />
+    <Content Include="Content\AutoCompleteCSS\chosen.png" />
+    <Content Include="Content\AutoCompleteCSS\oss-credit.png" />
+    <Content Include="Content\AutoCompleteCSS\prism.css" />
+    <Content Include="Content\AutoCompleteCSS\style.css" />
+    <Content Include="Content\AutoCompleteJS\chosen.jquery.js" />
+    <Content Include="Content\AutoCompleteJS\init.js" />
+    <Content Include="Content\AutoCompleteJS\init.proto.js" />
+    <Content Include="Content\AutoCompleteJS\prism.js" />
+    <Content Include="Content\CSS\app.css" />
+    <Content Include="Content\CSS\bootstrap-datepicker.css" />
+    <Content Include="Content\CSS\bootstrap.css" />
+    <Content Include="Content\CSS\Custom.css" />
+    <Content Include="Content\CSS\dataTables.bootstrap.min.css" />
+    <Content Include="Content\CSS\dataTables.bootstrap4.min.css" />
+    <Content Include="Content\CSS\DateRange\daterangepicker.css" />
+    <Content Include="Content\CSS\fa-solid.css" />
+    <Content Include="Content\CSS\font-awesome.min.css" />
+    <Content Include="Content\CSS\font\fontawesome-webfont.svg" />
+    <Content Include="Content\CSS\font\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\CSS\font\Simple-Line-Iconsb26c.html" />
+    <Content Include="Content\CSS\font\Simple-Line-Iconsb26c.svg" />
+    <Content Include="Content\CSS\font\webfonts\fa-brands-400.html" />
+    <Content Include="Content\CSS\font\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\CSS\font\webfonts\fa-regular-400.html" />
+    <Content Include="Content\CSS\font\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\CSS\font\webfonts\fa-solid-900.html" />
+    <Content Include="Content\CSS\font\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\CSS\glyphicon.css" />
+    <Content Include="Content\CSS\responsive.bootstrap.min.css" />
+    <Content Include="Content\CSS\responsive.bootstrap4.min.css" />
+    <Content Include="Content\CSS\responsive.css" />
+    <Content Include="Content\CSS\simple-line-icons.css" />
+    <Content Include="Content\CSS\style.css" />
+    <Content Include="Content\CSS\theme-h.css" />
+    <Content Include="Content\GSTfile\552682f0-8a8d-4d5a-9488-163af6208d36_Test.txt" />
+    <Content Include="Content\GSTfile\809629d9-3089-4971-9373-89d2c6b654ee_Test.txt" />
+    <Content Include="Content\Images\5.jpg" />
+    <Content Include="Content\Images\ajax-loader.gif" />
+    <Content Include="Content\Images\bg2.jpg" />
+    <Content Include="Content\Images\bg4.jpg" />
+    <Content Include="Content\Images\bg5.jpg" />
+    <Content Include="Content\Images\dummy.png" />
+    <Content Include="Content\Images\Login-Bg.png" />
+    <Content Include="Content\Images\logo2.png" />
+    <Content Include="Content\Images\logo22.png" />
+    <Content Include="Content\Images\logo23.png" />
+    <Content Include="Content\Images\logo24.png" />
+    <Content Include="Content\Images\logo25.png" />
+    <Content Include="Content\Images\logo3.png" />
+    <Content Include="Content\Images\mainlogo.png" />
+    <Content Include="Content\JsTree\dist\jstree.js" />
+    <Content Include="Content\JsTree\dist\jstree.min.js" />
+    <Content Include="Content\JsTree\dist\themes\default-dark\32px.png" />
+    <Content Include="Content\JsTree\dist\themes\default-dark\40px.png" />
+    <Content Include="Content\JsTree\dist\themes\default-dark\style.css" />
+    <Content Include="Content\JsTree\dist\themes\default-dark\style.min.css" />
+    <Content Include="Content\JsTree\dist\themes\default-dark\throbber.gif" />
+    <Content Include="Content\JsTree\dist\themes\default\32px.png" />
+    <Content Include="Content\JsTree\dist\themes\default\40px.png" />
+    <Content Include="Content\JsTree\dist\themes\default\style.css" />
+    <Content Include="Content\JsTree\dist\themes\default\style.min.css" />
+    <Content Include="Content\JsTree\dist\themes\default\throbber.gif" />
+    <Content Include="Content\JsTree\src\intro.js" />
+    <Content Include="Content\JsTree\src\jstree.changed.js" />
+    <Content Include="Content\JsTree\src\jstree.checkbox.js" />
+    <Content Include="Content\JsTree\src\jstree.conditionalselect.js" />
+    <Content Include="Content\JsTree\src\jstree.contextmenu.js" />
+    <Content Include="Content\JsTree\src\jstree.dnd.js" />
+    <Content Include="Content\JsTree\src\jstree.js" />
+    <Content Include="Content\JsTree\src\jstree.massload.js" />
+    <Content Include="Content\JsTree\src\jstree.search.js" />
+    <Content Include="Content\JsTree\src\jstree.sort.js" />
+    <Content Include="Content\JsTree\src\jstree.state.js" />
+    <Content Include="Content\JsTree\src\jstree.types.js" />
+    <Content Include="Content\JsTree\src\jstree.unique.js" />
+    <Content Include="Content\JsTree\src\jstree.wholerow.js" />
+    <Content Include="Content\JsTree\src\misc.js" />
+    <Content Include="Content\JsTree\src\outro.js" />
+    <Content Include="Content\JsTree\src\sample.js" />
+    <Content Include="Content\JsTree\src\themes\default-dark\32px.png" />
+    <Content Include="Content\JsTree\src\themes\default-dark\40px.png" />
+    <Content Include="Content\JsTree\src\themes\default-dark\style.css" />
+    <Content Include="Content\JsTree\src\themes\default-dark\throbber.gif" />
+    <Content Include="Content\JsTree\src\themes\default\32px.png" />
+    <Content Include="Content\JsTree\src\themes\default\40px.png" />
+    <Content Include="Content\JsTree\src\themes\default\style.css" />
+    <Content Include="Content\JsTree\src\themes\default\throbber.gif" />
+    <Content Include="Content\JsTree\src\vakata-jstree.js" />
+    <Content Include="Content\ProjectCSS\popupheader.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\eye.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\sr-cal.png" />
+    <Content Include="Scripts\additional-methods.js" />
+    <Content Include="Scripts\aes.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.js" />
+    <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Scripts\animo.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\AutoComplete\bootstrap.min.js" />
+    <Content Include="Scripts\AutoComplete\bootstrap3-typeahead.js" />
+    <Content Include="Scripts\AutoComplete\popper.min.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\CSS\font\fontawesome-webfont.eot" />
+    <Content Include="Content\CSS\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\CSS\font\fontawesome-webfont.woff" />
+    <Content Include="Content\CSS\font\fontawesome-webfont.woff2" />
+    <Content Include="Content\CSS\font\FontAwesome.otf" />
+    <Content Include="Content\CSS\font\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\CSS\font\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\CSS\font\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\CSS\font\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\CSS\font\Simple-Line-Iconsb26c.eot" />
+    <Content Include="Content\CSS\font\Simple-Line-Iconsb26c.ttf" />
+    <Content Include="Content\CSS\font\Simple-Line-Iconsb26c.woff" />
+    <Content Include="Content\CSS\font\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\CSS\font\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\CSS\font\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\CSS\font\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="Content\CSS\font\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\CSS\font\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\CSS\font\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\CSS\font\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="Content\CSS\font\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\CSS\font\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\CSS\font\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\CSS\font\webfonts\fa-solid-900d41d.eot" />
+    <Content Include="Content\Images\5.webp" />
+    <Content Include="Content\JsTree\src\themes\base.less" />
+    <Content Include="Content\JsTree\src\themes\default-dark\style.less" />
+    <Content Include="Content\JsTree\src\themes\default\style.less" />
+    <Content Include="Content\JsTree\src\themes\main.less" />
+    <Content Include="Content\JsTree\src\themes\mixins.less" />
+    <Content Include="Content\JsTree\src\themes\responsive.less" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\dashboard-c4e4f86526ee6b5adc4315ea5c0a57a0c4a12e75372d05257d41776fccf28a88.js" />
+    <Content Include="Scripts\dataTables.bootstrap.min.js" />
+    <Content Include="Scripts\dataTables.bootstrap4.min.js" />
+    <Content Include="Scripts\dataTables.responsive.min.js" />
+    <Content Include="Scripts\DateRange\daterangepicker.js" />
+    <Content Include="Scripts\DateRange\DateTimeFormat.js" />
+    <Content Include="Scripts\DateRange\moment.min.js" />
+    <Content Include="Scripts\Fee\Fee.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <None Include="Scripts\jquery-3.3.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery.easing.js" />
+    <Content Include="Scripts\jquery.localize.js" />
+    <Content Include="Scripts\jquery.steps.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js.storage.js" />
+    <Content Include="Scripts\Login\Login.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
+    <Content Include="Scripts\moment.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\ProjectJS\AddItemFilter.js" />
+    <Content Include="Scripts\ProjectJS\Common.js" />
+    <Content Include="Scripts\ProjectJS\Complaint.js" />
+    <Content Include="Scripts\ProjectJS\C_AreaJS.js" />
+    <Content Include="Scripts\ProjectJS\C_ItemJS.js" />
+    <Content Include="Scripts\ProjectJS\ItemGroupJS.js" />
+    <Content Include="Scripts\ProjectJS\ManageMaster_Common.js" />
+    <Content Include="Scripts\ProjectJS\PartyGroupJS.js" />
+    <Content Include="Scripts\ProjectJS\SalesDashboard.js" />
+    <Content Include="Scripts\ProjectJS\Travel.js" />
+    <Content Include="Scripts\ProjectJS\TravelExp.js" />
+    <Content Include="Scripts\ProjectJS\UploadFile.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\responsive.bootstrap4.min.js" />
+    <Content Include="Scripts\screenfull.js" />
+    <Content Include="Views\favicon.ico" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_footer.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_HeaderInfo.cshtml" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
+    <Content Include="Views\Shared\_Message.cshtml" />
+    <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Fee\FeeHeads.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="chosen\" />
+    <Folder Include="Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{ffb467e9-e3a3-4b2c-986a-82b553588f14}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERRORLOG\ERROR.csproj">
+      <Project>{982d6122-9a7f-49ca-8696-c43c473abfe8}</Project>
+      <Name>ERROR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SHARED\SHARED.csproj">
+      <Project>{7ae5da7a-a6c8-4d81-9d04-84cb60ae3c9c}</Project>
+      <Name>SHARED</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51267</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51267/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

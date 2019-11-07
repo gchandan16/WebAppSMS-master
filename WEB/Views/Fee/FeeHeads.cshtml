@@ -1,0 +1,97 @@
+﻿@model SHARED.FeeHead
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/Fee/Fee.js"></script>
+
+<div class="content-wrapper" style="min-height: 1204px;">
+    <!-- Content Header (Page header) -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Create Fees Heads</h3>
+                    </div><!-- /.box-header -->
+                    <!-- form start -->
+                    <form role="form">
+                        <table id="example2" class="table table-bordered ">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Fees Term</label>
+                                            @Html.TextBoxFor(m => m.FeeTerm, new { @class = "form-control mandate", @placeholder = "Fee Term", @msg = "Please enter Fee Term.", @pat = "^[A-Za-z ]*$", @maxlength = "100", @onkeypress = "return isKeyValid(event,'32,65-90,97-122');", @autocomplete = "off" })
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label for="Refundable">Refundable</label>
+                                            @Html.DropDownListFor(a => a.Refundable, new List<SelectListItem>() { new SelectListItem { Text = "-Select-", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" } }, new { @class = "form-control mandate", @msg = "Please select" })
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label for="Active">Active</label>
+                                            @Html.DropDownListFor(a => a.Active, new List<SelectListItem>() { new SelectListItem { Text = "-Select-", Value = "" }, new SelectListItem { Text = "Yes", Value = "1" }, new SelectListItem { Text = "No", Value = "0" } }, new { @class = "form-control mandate", @msg = "Please select" })
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="button" value="Save" class="btn btn-primary" id="SaveFeeTerm" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+            <section class="content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <h3 class="box-title">Created All Fees Heads </h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body">
+
+                                <table id="example2" class="table table-bordered table-hover">
+                                    @{
+                                        var grid = new WebGrid(Model.lstFeeHead, canPage: true, rowsPerPage: 5,
+                                        selectionFieldName: "selectedRow", ajaxUpdateContainerId: "gridContent");
+                                        grid.Pager(WebGridPagerModes.All);}
+
+
+                                    @grid.GetHtml(tableStyle: "webGrid",
+                    headerStyle: "header",
+                    alternatingRowStyle: "alt",
+                    selectedRowStyle: "select",
+                    columns: grid.Columns(
+                    grid.Column("FeeTerm", "Fee Term"),
+                    grid.Column("Define Installment", format:@<text><a class="edit-user display-mode">Installment</a> </text>)
+
+))
+
+
+                                </table>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+
+
+
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+</div>
