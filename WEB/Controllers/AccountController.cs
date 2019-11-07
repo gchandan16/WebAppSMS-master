@@ -27,7 +27,7 @@ namespace WEB.Controllers
     [InitializeSimpleMembership]
     public class AccountController : Controller
     {
-        //test
+        //test done
         StringBuilder str = new StringBuilder();
         List<MenuMaster> menulist;
         #region Login
