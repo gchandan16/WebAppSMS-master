@@ -41,6 +41,7 @@ namespace WEB.Controllers
         [AllowAnonymous]
         public ActionResult Create()
         {
+            //Create org
             SignupModel model = new SignupModel();
             model.CountryList = CSvc.GetCountryList();
             model.CityList = CSvc.GetCityList(0);
