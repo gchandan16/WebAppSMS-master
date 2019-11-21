@@ -94,7 +94,7 @@ namespace WEB.Controllers
                     master.Modifieddate = DateTime.Now;
                     master.CreatedBy = "EndUser";
                     master.ModifiedBy = "EndUser";
-                    master.Otype = "INS" ;
+                    master.Otype = "INS" ; // to check
                     int _retua =CSvc.OragnasitionBasicopation(master);
                     if(_retua>0)
                     {
