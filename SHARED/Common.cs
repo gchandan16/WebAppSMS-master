@@ -74,7 +74,7 @@ namespace SHARED
         [DataMember]
         public List<MenuPermissionMapMaster> MenuPermissionList { get; set; }
         [DataMember]
-        public int USER_ID { get; set; }
+        public int UserId { get; set; }
         [DataMember]
         public string FISRTNAME { get; set; }
         [DataMember]
@@ -128,27 +128,7 @@ namespace SHARED
         public int USER_ID { get; set; }
 
     }
-    public class RoleModel 
-    {
-        public int role_id { get; set; }
-
-        [Required(ErrorMessage = "Please enter role name")]
-        public string RoleName { get; set; }
-
-        [Required(ErrorMessage = "Please enter role description")]
-        public string RoleDescription { get; set; }
-
-        public string MenuList { get; set; }
-
-        public bool IsActive { get; set; }
-
-        public string ActionName { get; set; }
-
-        public List<RoleMaster> RoleList { get; set; }
-
-        public List<MenuPermissionMapMaster> selectedMenuPermission { get; set; }
-
-    }
+    
     public class UserModel 
     {
         public int User_Id { get; set; }
@@ -172,16 +152,14 @@ namespace SHARED
 
 
     }
-    public  class RoleMaster
+    public partial class RoleMaster
     {
-        public int ROLE_ID { get; set; }
-        public string ROLENAME { get; set; }
-        public string ROLEDESCRIPTION { get; set; }
-        public string ISACTIVE { get; set; }
-        public string CREATEDBY { get; set; }
-        public Nullable<System.DateTime> CREATEDDATE { get; set; }
+        // Additional Parameter As per Requirement
+        public string MenuName { get; set; }
 
+        public string PermissionName { get; set; }
 
+        public List<MenuPermissionMapMaster> MenuPermissionList { get; set; }
 
 
     }
@@ -270,9 +248,6 @@ namespace SHARED
         public List<CityMaster> HdQtrList { get; set; }
         public List<PinMaster> PinCodeList { get; set; }
 
-    }
-    public  class CityMaster
-    {
     }
     public class DepartmentMaster
     {
@@ -397,6 +372,17 @@ namespace SHARED
         public static string ROLE_DELETE_FAIL = "Unable to delete Role";
         #endregion
 
+        #region Orgnisation
+        public static string EMPATTACHMENT = "~/Content/Orgnisationatt/";
+        public static string Orgnisation_ADD_SUCCESS = "Registered successfully";
+        #endregion
+
+        #region ButtonName
+
+        public static string BTN_CREATE = "create";
+        public static string BTN_EDIT = "edit";
+        public static string BTN_DISPLAY = "display";
+        #endregion
 
     }
 }

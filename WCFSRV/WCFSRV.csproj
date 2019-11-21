@@ -46,7 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotNetOpenAuth.Core">
-      <HintPath>C:\Users\Manish Gupta\Desktop\test\WEB\bin\DotNetOpenAuth.Core.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\DotNetOpenAuth.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -73,24 +73,24 @@
     </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.Mvc.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.Razor.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.WebPages.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />

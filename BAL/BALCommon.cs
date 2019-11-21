@@ -105,5 +105,41 @@ namespace BAL
             DALCommon dal = new DALCommon(ConStr);
             return dal.GetUserInfoByuserId(userId);
         }
+
+        public List<RoleMaster> GetRoleList()
+        {
+            DALCommon dal = new DALCommon(ConStr);
+            return dal.GetRoleList();
+        }
+        public List<CityMaster> GetCityList(int? STATE_ID)
+        {
+            DALCommon dal = new DALCommon(ConStr);
+            return dal.GetCityList(STATE_ID);
+        }
+
+        public List<StateMaster> GetStateList(int? COUNTRY_ID)
+        {
+
+            DALCommon dal = new DALCommon(ConStr);
+            return dal.GetStateList(COUNTRY_ID);
+        }
+
+        public List<CountryMaster> GetCountryList()
+        {
+
+            DALCommon dal = new DALCommon(ConStr);
+            return dal.GetCountryList();
+        }
+        public int OragnasitionBasicopation(OragnisationMaster _OM)
+        {
+            DALCommon dal = new DALCommon(ConStr);
+          return  dal.OragnasitionBasicopation(_OM);
+        }
+
+        public OragnisationMaster GetOragnisationAlready(string LEmailId)
+        {
+            DALCommon dal = new DALCommon(ConStr);
+            return dal.GetOragnisationAlready(LEmailId);
+        }
     }
 }

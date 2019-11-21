@@ -35,7 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime">
-      <HintPath>Z:\Bhupender\PATGBTDLLs\Antlr3.Runtime.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -54,27 +57,30 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.Helpers.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.Mvc.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.Razor.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.WebPages.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>Z:\Bhupender\PATGBTDLLs\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>C:\Users\Chandan\Downloads\WebAppSMS-master\WebAppSMS-master\AllDLLs\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -83,10 +89,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="base\CityMaster.cs" />
+    <Compile Include="base\CountryMaster.cs" />
+    <Compile Include="base\OragnisationMaster.cs" />
+    <Compile Include="base\RoleMaster.cs" />
+    <Compile Include="base\StateMaster.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Fee.cs" />
     <Compile Include="InterfacesContract\ICommonSrv.cs" />
     <Compile Include="InterfacesContract\IFeeSrv.cs" />
+    <Compile Include="OragnisationMaster.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

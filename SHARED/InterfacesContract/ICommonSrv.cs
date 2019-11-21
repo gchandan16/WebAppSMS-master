@@ -43,5 +43,29 @@ namespace SHARED
        
         [OperationContract]
         UserMasters getUserProfile(string UserName);
+
+        [OperationContract]
+        List<RoleMaster> GetRoleList();
+
+        [OperationContract]
+        List<StateMaster> GetStateList(int? COUNTRY_ID);
+
+        [OperationContract]
+        List<CountryMaster> GetCountryList();
+
+        [OperationContract]
+        List<CityMaster> GetCityList(int? STATE_ID);
+
+        [OperationContract]
+        int OragnasitionBasicopation(OragnisationMaster _OM);
+
+        [OperationContract]
+        OragnisationMaster GetOragnisationAlready(string LEmailId);
+
+        #region RoleRelated Opration
+        [OperationContract]
+        void AddRole(RoleMaster rolemaster, List<MenuPermissionMapMaster> menupermissionList);
+        #endregion
+
     }
 }

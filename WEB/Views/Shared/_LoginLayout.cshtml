@@ -22,11 +22,13 @@
     <link href="/Content/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="/Content/css/responsive.bootstrap4.min.css" />
     <!-- MODERNIZR-->
-    <script src="/Scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+
+   
+    <link href="/Content/AutoCompleteCSS/chosen.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/css/Custom.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
+
         body {
             background: #d6111b url(/Content/Images/Login-Bg.png) no-repeat center center fixed !important;
             -webkit-background-size: cover !important;
@@ -43,15 +45,21 @@
     <div class="header">
         <div class="container">
             <a href="#default" class="logo header-right">
-               <h1>SMS  SOFTWARE</h1></a>
+                <h1>SMS  SOFTWARE</h1>
+            </a>
         </div>
     </div>
     @RenderBody()
     <footer class="footer-container footer_fix">
         <div class="col-md-12 text-center">
-            <a href="#">© 2018 - CSSOFT
+            <a href="#">
+                © 2018 - CSSOFT
             </a>
         </div>
     </footer>
+
+
+
+    <script src="/Content/AutoCompleteJS/chosen.jquery.js" type="text/javascript"></script>
 </body>
 </html>

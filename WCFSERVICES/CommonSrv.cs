@@ -102,5 +102,50 @@ namespace SERVICES
             BALCommon bal = new BALCommon(ConStr);
             return bal.GetUserInfoByuserId(userId);
         }
+
+        public List<RoleMaster> GetRoleList()
+        {
+            BALCommon bal = new BALCommon(ConStr);
+            return bal.GetRoleList();
+        }
+
+        public List<StateMaster> GetStateList(int? COUNTRY_ID)
+        {
+            //throw new NotImplementedException();
+            BALCommon bal = new BALCommon(ConStr);
+            return bal.GetStateList(COUNTRY_ID);
+        }
+
+        public List<CountryMaster> GetCountryList()
+        {
+            BALCommon bal = new BALCommon(ConStr);
+            return bal.GetCountryList();
+        }
+
+        public List<CityMaster> GetCityList(int? STATE_ID)
+        {
+            BALCommon bal = new BALCommon(ConStr);
+            return bal.GetCityList(STATE_ID);
+        }
+
+        public int OragnasitionBasicopation(OragnisationMaster _OM)
+        {
+            BALCommon bal = new BALCommon(ConStr);
+          return  bal.OragnasitionBasicopation(_OM);
+        }
+
+        public OragnisationMaster GetOragnisationAlready(string LEmailId)
+        {
+            BALCommon bal = new BALCommon(ConStr);
+            return bal.GetOragnisationAlready(LEmailId);
+        }
+
+        #region Role Related Opration
+        public void AddRole(RoleMaster rolemaster, List<MenuPermissionMapMaster> menupermissionList)
+        {
+            BALRole bal = new BALRole(ConStr);
+            bal.AddRole(rolemaster, menupermissionList);
+        }
+        #endregion
     }
 }

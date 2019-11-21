@@ -22,10 +22,10 @@ namespace WEB.Controllers
         public ActionResult Index()
         {
             BaseModel model = new BaseModel();
-            UserMasters currentUser = new UserMasters();
-            currentUser.USER_ID = WebSecurity.CurrentUserId;
-            currentUser.USERNAME = WebSecurity.CurrentUserName;
-            var currentmonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+           // UserMasters currentUser = new UserMasters();
+            //currentUser.USER_ID = WebSecurity.CurrentUserId;
+            //currentUser.USERNAME = WebSecurity.CurrentUserName;
+            //var currentmonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
             //model.FromDate = currentmonth;
             //model.ToDate = currentmonth.AddMonths(1).AddDays(-1);
 
